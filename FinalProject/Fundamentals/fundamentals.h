@@ -1,0 +1,8 @@
+//
+// Created by Anton Samofalov on 2024-07-26.
+//
+
+#ifndef FINAL_PROJECT_FUNDAMENTALS_H
+#define FINAL_PROJECT_FUNDAMENTALS_H
+
+#endif //FINAL_PROJECT_FUNDAMENTALS_H
