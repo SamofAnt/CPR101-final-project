@@ -10,6 +10,7 @@
 
 int main(void){
 
-
+    char str[] = "Hello, how are you? I am fine.";
+    tokenizeWords(str);
     return 0;
 }
