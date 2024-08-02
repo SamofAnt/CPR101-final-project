@@ -6,11 +6,12 @@
 #include "Fundamentals/fundamentals.h"
 #include "Manipulating/manipulating.h"
 #include "Tokenizing/tokenizing.h"
-#include "stdio.h"
+#include <stdio.h>
 
 int main(void){
 
     char str[] = "Hello, how are you? I am fine.";
+    printf("Tokenizing Words:\n");
     tokenizeWords(str);
     return 0;
 }

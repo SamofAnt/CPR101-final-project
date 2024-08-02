@@ -8,15 +8,18 @@
 #include <ctype.h>
 
 //Tokenize words
-void tokenizeWords(char * str){
+int tokenizeWords(char * str){
     char * token;
     const char * delim = " .,!?;:";
+    int i;
 
     token = strtok(str,delim);
-    while (token != NULL){
+    for (i = 0; token != NULL; ++i) {
         printf("Word: %s\n", token);
         token = strtok(NULL, delim);
     }
+
+    return i;
 }
 //Tokenize phrases
 int tokenizePhrases(char* str){
@@ -32,13 +35,15 @@ int tokenizePhrases(char* str){
 }
 
 //Tokenize sentences
-void tokenizeSentences(char* str){
+int tokenizeSentences(char* str){
     char * token;
     const char * delim = ".?!";
+    int i;
 
     token = strtok(str,delim);
-    while (token != NULL){
+    for (i = 0; token != NULL; ++i) {
         printf("Word: %s\n", token);
         token = strtok(NULL, delim);
     }
+    return i;
 }
